@@ -1,8 +1,9 @@
 import React from "react";
-import { instagram, telefon, tg, tiktok, youtube } from "../assets/icons";
-import { frame1, frame2 } from "../assets/images";
+import { instagram, tg, tiktok, youtube } from "../assets/icons";
+import { useTranslation } from "react-i18next";
 
 const FirstLayer = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex lg:flex-row xs:flex-col-reverse xs:pt-10 lg:pt-0 lg:gap-2 text-white lg:ps-16  items-center lg:max-w-screen-lg ">
       <div className="gap-5 lg:flex-col flex before:h-52 before:rounded-lg lg:before:w-1 before:bg-white after:h-52 lg:py-3  after:rounded-lg lg:after:w-1 after:bg-white items-center">
@@ -41,16 +42,23 @@ const FirstLayer = () => {
           <h1 className="font-normal xs:text-3xl lg:text-[45px]  ">Turkona</h1>
         </div>
         <p className="font-verdana lg:text-xl lg:max-w-screen-lg xs:max-w-screen-xs">
-          My profession is taking beautiful video with my mobile phone. I want
-          share happy moments and beautiful feelings.
+          {t("first-layer")}
         </p>
         <button className="font-inter lg:w-auto xs:w-[100%] lg:bg-secondary lg:text-white xs:bg-white xs:text-secondary mt-6 p-3 border-2 px-10 hover:bg-white hover:text-secondary">
-          Hire me
+          {t("first-layer-2")}
         </button>
       </div>
       <div className="lg:flex xs:hidden justify-between items-center ps-28">
-        <img className="w-64 " src={frame1} alt="" />
-        <img className="w-[137px] ms-[27.6vh]" src={frame2} alt="" />
+        <img
+          className="w-64 "
+          src="https://video-psi-mocha.vercel.app/Frame1.png"
+          alt=""
+        />
+        <img
+          className="w-[137px] ms-[27.6vh]"
+          src="https://video-psi-mocha.vercel.app/Frame2.png"
+          alt=""
+        />
       </div>
     </div>
   );
