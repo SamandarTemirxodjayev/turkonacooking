@@ -1,5 +1,4 @@
 import React from "react";
-import { product1, product2, product3, product4 } from "../assets/images";
 import { useTranslation } from "react-i18next";
 
 const FourthLayer = () => {
