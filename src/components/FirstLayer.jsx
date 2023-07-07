@@ -10,28 +10,28 @@ const FirstLayer = () => {
       <div className="gap-5 lg:flex-col flex before:h-52 before:rounded-lg lg:before:w-1 before:bg-white after:h-52 lg:py-3  after:rounded-lg lg:after:w-1 after:bg-white items-center">
         <a href="https://www.instagram.com/turkona_cooking/">
           <img
-            className="w- hover:-translate-y-2 transition-all duration-500 "
+            className="xs:w-[32px] lg:w-auto hover:-translate-y-2 transition-all duration-500 "
             src={instagram}
             alt=""
           />
         </a>
         <a href="https://t.me/turkona_cooking">
           <img
-            className="w-[32px] h-[32px] object-contain hover:-translate-y-2 transition-all duration-500 "
+            className="xs:w-[32px] lg:w-auto  object-contain hover:-translate-y-2 transition-all duration-500 "
             src={tg}
             alt=""
           />
         </a>
         <a href="https://www.tiktok.com/@turkonacooking?_t=8dg3gLosz9F&_r=1">
           <img
-            className="w-[32px] h-[32px] object-contain hover:-translate-y-2 transition-all duration-500 "
+            className="xs:w-[32px] lg:w-auto object-contain hover:-translate-y-2 transition-all duration-500 "
             src={tiktok}
             alt=""
           />
         </a>
         <a href="https://youtube.com/@TurkonaAmilova">
           <img
-            className="w-[32px] h-[32px] object-contain hover:-translate-y-2 transition-all duration-500 "
+            className="xs:w-[32px] lg:w-auto object-contain hover:-translate-y-2 transition-all duration-500 "
             src={youtube}
             alt=""
           />
