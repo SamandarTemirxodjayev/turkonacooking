@@ -1,15 +1,16 @@
 import React from "react";
 import { instagram, tg, tiktok, youtube } from "../assets/icons";
 import { useTranslation } from "react-i18next";
+import { phone, phone1 } from "../assets/images";
 
 const FirstLayer = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex lg:flex-row xs:flex-col-reverse xs:pt-10 lg:pt-0 lg:gap-2 text-white lg:ps-16  items-center lg:max-w-screen-lg ">
+    <div className="flex lg:flex-row xs:flex-col-reverse xs:pt-10 lg:pt-0 lg:gap-1 text-white lg:ps-16  items-center lg:max-w-screen-lg ">
       <div className="gap-5 lg:flex-col flex before:h-52 before:rounded-lg lg:before:w-1 before:bg-white after:h-52 lg:py-3  after:rounded-lg lg:after:w-1 after:bg-white items-center">
         <a href="https://www.instagram.com/turkona_cooking/">
           <img
-            className="w-[60px] h-[32px] object-contain hover:-translate-y-2 transition-all duration-500 "
+            className="w- hover:-translate-y-2 transition-all duration-500 "
             src={instagram}
             alt=""
           />
@@ -48,15 +49,15 @@ const FirstLayer = () => {
           {t("first-layer-2")}
         </button>
       </div>
-      <div className="lg:flex xs:hidden justify-between items-center ps-28">
+      <div className="lg:flex xs:hidden object-contain justify-between items-center ps-28">
         <img
           className="w-64 "
-          src="https://video-psi-mocha.vercel.app/Frame1.png"
+          src={phone1}
           alt=""
         />
         <img
-          className="w-[137px] ms-[27.6vh]"
-          src="https://video-psi-mocha.vercel.app/Frame2.png"
+          className="w-[137px] ms-[28.7vh]"
+          src={phone}
           alt=""
         />
       </div>

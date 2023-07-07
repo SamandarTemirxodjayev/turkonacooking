@@ -1,4 +1,7 @@
 import React from "react";
+import video1 from '../assets/videos/IMG_6424 (1) (1).mp4'
+import video2 from '../assets/videos/IMG_7963 (1).mp4'
+import video3 from '../assets/videos/IMG_8028 (1).mp4'
 import { useTranslation } from "react-i18next";
 const SecondLayer = () => {
   const { t } = useTranslation();
@@ -18,7 +21,7 @@ const SecondLayer = () => {
             className="object-contain rounded-[24px]"
           >
             <source
-              src="https://video-psi-mocha.vercel.app/IMG_6424%20(1).mp4"
+              src={video1}
               type="video/mp4"
             />
           </video>
@@ -33,7 +36,7 @@ const SecondLayer = () => {
             className="object-contain rounded-[24px]"
           >
             <source
-              src="https://video-psi-mocha.vercel.app/IMG_7963.mp4"
+              src={video2}
               type="video/mp4"
             />
           </video>
@@ -48,7 +51,7 @@ const SecondLayer = () => {
             className="object-contain rounded-[24px]"
           >
             <source
-              src="https://video-psi-mocha.vercel.app/IMG_8028.mp4"
+              src={video3}
               type="video/mp4"
             />
           </video>

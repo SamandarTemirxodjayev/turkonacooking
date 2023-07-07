@@ -26,6 +26,27 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background-color: #f72585;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
 .bg-grad {
   background: linear-gradient(
     90deg,
@@ -47,60 +68,59 @@
 }
 .pink-bg {
   background-image: linear-gradient(
-    360deg,
-    #f72585 15%,
-    rgba(255, 255, 255, 0) 60% 
-  ), url("./assets/images/turkona.png");
+      360deg,
+      #f72585 15%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    url("./assets/images/turkona.png");
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
 }
 
-.circle::before{
+.circle::before {
   content: "";
   border-radius: 50%;
-  display:inline-flex;
+  display: inline-flex;
   width: 18px;
   margin-right: 40px;
   height: 18px;
-  background: #F72585;
+  background: #f72585;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-@media only screen and (min-width: 1200px){
-  .circle::before{
+@media only screen and (min-width: 1200px) {
+  .circle::before {
     content: "";
     border-radius: 50%;
-    display:inline-flex;
+    display: inline-flex;
     width: 18px;
     margin-right: 40px;
     height: 18px;
-    background: #F72585;
+    background: #f72585;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
   }
-  .checkbox::before{
-    content:url('./assets/icons/checked.png');
+  .checkbox::before {
+    content: url("./assets/icons/checked.png");
     margin-right: 4px;
     align-items: center;
     display: inline-flex;
-  
-  
   }
 }
-@media only screen and (max-width: 600px){
-  .circle::before{
+@media only screen and (max-width: 600px) {
+  .circle::before {
     content: "";
     border-radius: 50%;
-    display:inline-flex;
+    display: inline-flex;
     width: 10px;
     margin-right: 10px;
     height: 10px;
-    background: #F72585;
+    background: #f72585;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -108,26 +128,23 @@
   }
 }
 
-
-.checkbox::before{
-  content:url('./assets/icons/checked.png');
+.checkbox::before {
+  content: url("./assets/icons/checked.png");
   margin-right: 4px;
   align-items: center;
   display: inline-flex;
-
-
 }
 
-.form{
-  background: url('https://video-psi-mocha.vercel.app/bg.png');
+.form {
+  background: url("./assets/images/bg.png");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
-.hover-cont:hover{
+.hover-cont:hover {
   cursor: pointer;
 }
-.hover-cont:hover .meals{
+.hover-cont:hover .meals {
   z-index: 1;
   transform: translateY(60px);
   -webkit-transform: translateY(60px);
@@ -149,7 +166,7 @@
   position: absolute;
   width: 32px;
   height: 32px;
-  background: #fff;
+  background: #f72585;
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .lds-heart div:after,
@@ -159,7 +176,7 @@
   display: block;
   width: 32px;
   height: 32px;
-  background: #fff;
+  background: #f72585;
 }
 .lds-heart div:before {
   left: -24px;
@@ -190,6 +207,6 @@
   }
 }
 
-.active{
+.active {
   color: white;
 }
