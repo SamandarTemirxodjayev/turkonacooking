@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div className="flex items-center justify-center max-h-screen h-[900px] pink-bg">
-        <div className="absolute bottom-5 float-none  flex flex-col gap-7">
+        <div className="xs:absolute lg:relative lg:bottom-0 xs:bottom-5 float-none  flex flex-col gap-7">
           <a
             href="https://youtube.com/@TurkonaAmilova"
             className="flex justify-start px-5 gap-[27px] items-center rounded-[6.8px] text-white font-poppins text-[32px]  w-[300px] h-[55px] bg-[#FF2121]"
