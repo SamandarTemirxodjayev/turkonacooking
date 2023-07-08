@@ -1,12 +1,14 @@
 import React from "react";
-import Header from "../components/Header";
-import FirstLayer from "../components/FirstLayer";
-import SecondLayer from "../components/SecondLayer";
-import ThirdLayer from "../components/ThirdLayer";
-import FourthLayer from "../components/FourthLayer";
-import FifthLayer from "../components/FifthLayer";
-import SixthLayer from "../components/SixthLayer";
-import Footer from "../components/Footer";
+
+const Header = React.lazy(() => import("../components/Header"));
+const FirstLayer = React.lazy(() => import("../components/FirstLayer"));
+const SecondLayer = React.lazy(() => import("../components/SecondLayer"));
+const ThirdLayer = React.lazy(() => import("../components/ThirdLayer"));
+const FourthLayer = React.lazy(() => import("../components/FourthLayer"));
+const FifthLayer = React.lazy(() => import("../components/FifthLayer"));
+const SixthLayer = React.lazy(() => import("../components/SixthLayer"));
+const Footer = React.lazy(() => import("../components/Footer"));
+
 
 const Website = () => {
   return (

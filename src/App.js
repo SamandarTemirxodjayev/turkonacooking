@@ -1,17 +1,17 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Website from "./pages/Website";
+const Home = React.lazy(() => import("./pages/Home"));
+const Website = React.lazy(() => import("./pages/Website"));
 
-
-function App() {
+const App = () => {
   return (
     <>
       <Routes>
-        <Route index element={<Home/>}/>
-        <Route path="/website" element={<Website/>}/>
+        <Route index element={<Home />} />
+        <Route path="/website" element={<Website />} />
       </Routes>
     </>
   );
-}
+};
 
 export default App;

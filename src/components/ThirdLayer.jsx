@@ -2,10 +2,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { turkona } from "../assets/images";
 
+
 const ThirdLayer = () => {
   const {t} = useTranslation()
   return (
     <div className="font-verdana py-10 lg:px-64  flex lg:flex-row xs:flex-col gap-10 justify-center bg-white items-center xs:px-6">
+
       <img
         className="lg:w-[355px] w-[100%] "
         src={turkona}

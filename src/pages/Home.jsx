@@ -1,9 +1,13 @@
 import React from "react";
-import { turkona } from "../assets/images/index";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { instagram, tg, tiktok, website, youtube } from "../assets/icons/index";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ scrollPosition }) => {
   return (
     <>
       <div className="flex items-center justify-center max-h-screen h-[900px] pink-bg">
@@ -12,47 +16,67 @@ const Home = () => {
             href="https://youtube.com/@TurkonaAmilova"
             className="flex justify-start px-5 gap-[27px] items-center rounded-[6.8px] text-white font-poppins text-[32px]  w-[300px] h-[55px] bg-[#FF2121]"
           >
-            <img
+            <LazyLoadImage
               className="w-[32px] h-[32px] object-contain"
               src={youtube}
-              alt=""
+              alt="Image Description"
+              effect="blur" // optional: adds a blur effect while loading
+              scrollPosition={scrollPosition} // required if you want to track scroll position
             />
+
             <h1>You Tube</h1>
           </a>
           <a
             href="https://www.instagram.com/turkona_cooking/"
             className="flex justify-start px-5 gap-[27px] items-center rounded-[6.8px] text-white font-poppins text-[32px]  w-[300px] h-[55px] bg-grad   "
           >
-            <img
+            <LazyLoadImage
               className="w-[32px] h-[32px] object-contain"
               src={instagram}
-              alt=""
+              alt="Image Description"
+              effect="blur" // optional: adds a blur effect while loading
+              scrollPosition={scrollPosition} // required if you want to track scroll position
             />
+            
             <h1>Instagram</h1>
           </a>
           <a
             href="https://www.tiktok.com/@turkonacooking?_t=8dg3gLosz9F&_r=1"
             className="flex justify-start px-5 gap-[27px] items-center rounded-[6.8px] text-white font-poppins text-[32px]  w-[300px] h-[55px] bg-tk   "
           >
-            <img
+            <LazyLoadImage
               className="w-[32px] h-[32px] object-contain"
               src={tiktok}
-              alt=""
+              alt="Image Description"
+              effect="blur" // optional: adds a blur effect while loading
+              scrollPosition={scrollPosition} // required if you want to track scroll position
             />
+            
             <h1>TikTok</h1>
           </a>
           <a
             href="https://t.me/turkona_cooking"
             className="flex justify-start px-5 gap-[27px] items-center rounded-[6.8px] text-white font-poppins text-[32px]  w-[300px] h-[55px] bg-[#0088CC]   "
           >
-            <img className="w-[32px] h-[32px] object-contain" src={tg} alt="" />
+            <LazyLoadImage
+              className="w-[32px] h-[32px] object-contain"
+              src={tg}
+              alt="Image Description"
+              effect="blur" // optional: adds a blur effect while loading
+              scrollPosition={scrollPosition} // required if you want to track scroll position
+            />
             <h1>Telegram</h1>
           </a>
-          <Link to="/website" className="flex justify-start px-5 gap-[27px] items-center rounded-[6.8px] text-white font-poppins text-[32px]  w-[300px] h-[55px] bg-[#501f95]">
-            <img
+          <Link
+            to="/website"
+            className="flex justify-start px-5 gap-[27px] items-center rounded-[6.8px] text-white font-poppins text-[32px]  w-[300px] h-[55px] bg-[#501f95]"
+          >
+            <LazyLoadImage
               className="w-[32px] h-[32px] object-contain"
               src={website}
-              alt=""
+              alt="Image Description"
+              effect="blur" // optional: adds a blur effect while loading
+              scrollPosition={scrollPosition} // required if you want to track scroll position
             />
             <h1>Website</h1>
           </Link>
@@ -62,4 +86,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default trackWindowScroll(Home);
