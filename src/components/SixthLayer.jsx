@@ -11,7 +11,7 @@ const SixthLayer = () => {
     e.preventDefault();
 
     try {
-      const telegramBotToken = "6120767539:AAENThkaDo5JOEnTKBQtk6pfm6yHca57wXc";
+      const telegramBotToken = "6013665699:AAE19noZDlWZKcAs41-pCErw61SyL9H1Lwo";
       const chatId = "1001597032";
 
       const text = `Saytdan xabar keldi :

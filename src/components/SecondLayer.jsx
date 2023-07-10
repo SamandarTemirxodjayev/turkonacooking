@@ -16,61 +16,40 @@ const SecondLayer = () => {
         <div className="lg:w-[320px] xs:w-[100%] lg:h-[569px] lg:rounded-[32px]">
           {/* Video 1 */}
           <LazyLoadComponent effect="blur">
-            <video
-              preload={
-                <div className="w-[100%] h-[100%] flex items-center justify-center relative top-56">
-                  <Loader />
-                </div>
-              }
-              controls
-              autoPlay
-              muted
-              loop
-              className="object-contain
-            rounded-[24px]"
-            >
-              <source src={video1} type="video/mp4" />
-            </video>
+            <iframe
+              style={{width: "100%", height: "568px", }}
+              src="https://www.youtube.com/embed/j5KK7L3YU3w?playlist=j5KK7L3YU3w&loop=1&autoplay=1&controls=0&&showinfo=0&autohide=1&mute=1"
+              title="Qisqacha men haqimda"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </LazyLoadComponent>
         </div>
         <div className="lg:w-[320px] xs:w-[100%] lg:h-[569px] lg:rounded-[32px]">
           {/* Video 1 */}
           <LazyLoadComponent effect="blur">
-            <video
-              preload={
-                <div className="w-[100%] h-[100%] flex items-center justify-center relative top-56">
-                  <Loader />
-                </div>
-              }
-              controls
-              autoPlay
-              muted
-              loop
-              className="object-contain
-            rounded-[24px]"
-            >
-              <source src={video2} type="video/mp4" />
-            </video>
+            <iframe
+              style={{ width: "100%", height: "568px", }}
+              src="https://www.youtube.com/embed/HTY9klHu1Pk?playlist=HTY9klHu1Pk&loop=1&autoplay=1&controls=0&&showinfo=0&autohide=1&mute=1"
+              title="#asmr muzqaymoq"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </LazyLoadComponent>
         </div>
-        <div className="lg:w-[320px] xs:w-[100%] lg:h-[569px] lg:rounded-[32px]">
+        <div className="lg:w-[320px] xs:w-[100%] lg:h-[569px] ">
           {/* Video 1 */}
           <LazyLoadComponent effect="blur">
-            <video
-              preload={
-                <div className="w-[100%] h-[100%] flex items-center justify-center relative top-56">
-                  <Loader />
-                </div>
-              }
-              controls
-              autoPlay
-              muted
-              loop
-              className="object-contain
-            rounded-[24px]"
-            >
-              <source src={video3} type="video/mp4" />
-            </video>
+            <iframe
+              style={{ width: "100%", height: "568px",rounded: "32px" }}
+              src="https://www.youtube.com/embed/xmFRRtmtpAc?playlist=xmFRRtmtpAc&loop=1&autoplay=1&controls=0&&showinfo=0&autohide=1&mute=1"
+              title="Qisqacha men haqimda"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </LazyLoadComponent>
         </div>
       </div>
