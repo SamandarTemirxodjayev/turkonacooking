@@ -2,7 +2,7 @@ import React from "react";
 
 const Loader = () => {
   return (
-    <div class="lds-heart">
+    <div className="lds-heart">
       <div></div>
     </div>
   );

@@ -48,9 +48,9 @@ const Footer = () => {
             <h1 className="text-[20px]">+998 90 935-59-05</h1>
           </a>
         </div>
-        <button className="font-inter lg:w-auto xs:w-[100%] lg:bg-secondary lg:text-white xs:bg-white xs:text-secondary lg:mt-6 p-3 border-2 px-10 hover:bg-white hover:text-secondary">
+        <a href="https://t.me/Online_mobilografiya" className="font-inter lg:w-auto xs:w-[100%] lg:bg-secondary lg:text-white xs:bg-white xs:text-secondary lg:mt-6 p-3 border-2 px-10 hover:bg-white hover:text-secondary">
           {t("first-layer-2")}
-        </button>
+        </a>
       </div>
       <div className="before:w-[100%] lg:text-base xs:text-xs xs:px-3 lg:px-0 before:h-[1px] before:bg-white text-white font-poppins before:inline-flex before:mb-4 xs:pb-10 lg:pb-5">
         <div className="flex justify-between">

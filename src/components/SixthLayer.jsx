@@ -27,7 +27,7 @@ const SixthLayer = () => {
       );
 
       // Handle successful submission
-      alert("Form submitted successfully");
+      alert("Xabar yuborildi");
 
       // Reset the form
       setEmail("");
@@ -53,8 +53,8 @@ const SixthLayer = () => {
         />
         <textarea
           required
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           placeholder={t("sixth-layer-8")}
           className="mt-6 font-extrabold w-[100%] lg:p-10 xs:p-4 py-4 h-44 "
         ></textarea>
