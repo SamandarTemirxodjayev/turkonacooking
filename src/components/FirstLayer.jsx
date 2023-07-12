@@ -13,7 +13,7 @@ const FirstLayer = ({ scrollPosition }) => {
   return (
     <div className="flex xs:py-[50%] lg:py-0  lg:flex-row xs:flex-col-reverse lg:pt-0 lg:gap-1 text-white lg:ps-16  items-center lg:max-w-screen-lg ">
       <div className="gap-5 lg:flex-col flex before:h-52 before:rounded-lg lg:before:w-1 before:bg-white after:h-52 lg:py-3  after:rounded-lg lg:after:w-1 after:bg-white items-center">
-        <a
+        <a rel="noopener noreferrer" target="_blank"
           className="xs:w-[32px] lg:w-[32px] hover:-translate-y-2 transition-all duration-500 "
           href="https://www.instagram.com/turkona_cooking/"
         >
@@ -24,7 +24,7 @@ const FirstLayer = ({ scrollPosition }) => {
             scrollPosition={scrollPosition} // required if you want to track scroll position
           />
         </a>
-        <a
+        <a rel="noopener noreferrer" target="_blank"
           className="xs:w-[32px]  lg:w-[32px] object-contain hover:-translate-y-2 transition-all duration-500 "
           href="https://t.me/turkona_cooking"
         >
@@ -35,7 +35,7 @@ const FirstLayer = ({ scrollPosition }) => {
             scrollPosition={scrollPosition} // required if you want to track scroll position
           />
         </a>
-        <a
+        <a rel="noopener noreferrer" target="_blank"
           className="xs:w-[32px]  lg:w-[32px] object-contain hover:-translate-y-2 transition-all duration-500 "
           href="https://www.tiktok.com/@turkonacooking?_t=8dg3gLosz9F&_r=1"
         >
@@ -46,7 +46,7 @@ const FirstLayer = ({ scrollPosition }) => {
             scrollPosition={scrollPosition} // required if you want to track scroll position
           />
         </a>
-        <a
+        <a rel="noopener noreferrer" target="_blank"
           className="xs:w-[32px]  lg:w-[32px] object-contain hover:-translate-y-2 transition-all duration-500 "
           href="https://youtube.com/@TurkonaAmilova"
         >

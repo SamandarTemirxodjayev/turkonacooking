@@ -4,35 +4,41 @@ import { instagram, telefon, tg, tiktok, youtube } from "../assets/icons";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col lg:px-32">
       <div className="flex lg:flex-row xs:flex-col xs:px-6 xs:gap-10 justify-between items-start py-10">
         <img className="w-40" src={logo} alt="" />
         <div className="flex flex-col lg:gap-10 xs:gap-8 items-center">
           <div className="flex items-center gap-7">
-            <a href="https://www.instagram.com/turkona_cooking/">
+            <a
+              target="_blank" rel="noopener noreferrer"
+              href="https://www.instagram.com/turkona_cooking/"
+            >
               <img
                 className="w-8 hover:-translate-y-2 transition-all duration-500 "
                 src={instagram}
                 alt=""
               />
             </a>
-            <a href="https://t.me/turkona_cooking">
+            <a target="_blank" rel="noopener noreferrer" href="https://t.me/turkona_cooking">
               <img
                 className="w-8 hover:-translate-y-2 transition-all duration-500 "
                 src={tg}
                 alt=""
               />
             </a>
-            <a href="https://www.tiktok.com/@turkonacooking?_t=8dg3gLosz9F&_r=1">
+            <a
+              target="_blank" rel="noopener noreferrer"
+              href="https://www.tiktok.com/@turkonacooking?_t=8dg3gLosz9F&_r=1"
+            >
               <img
                 className="w-8 hover:-translate-y-2 transition-all duration-500 "
                 src={tiktok}
                 alt=""
               />
             </a>
-            <a href="https://youtube.com/@TurkonaAmilova">
+            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@TurkonaAmilova">
               <img
                 className="w-8 hover:-translate-y-2 transition-all duration-500 "
                 src={youtube}
@@ -48,7 +54,11 @@ const Footer = () => {
             <h1 className="text-[20px]">+998 90 935-59-05</h1>
           </a>
         </div>
-        <a href="https://t.me/Online_mobilografiya" className="font-inter lg:w-auto xs:w-[100%] lg:bg-secondary lg:text-white xs:bg-white xs:text-secondary lg:mt-6 p-3 border-2 px-10 hover:bg-white hover:text-secondary">
+        <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://t.me/Online_mobilografiya"
+          className="font-inter lg:w-auto xs:w-[100%] lg:bg-secondary lg:text-white xs:bg-white xs:text-secondary lg:mt-6 p-3 border-2 px-10 hover:bg-white hover:text-secondary"
+        >
           {t("first-layer-2")}
         </a>
       </div>
@@ -58,7 +68,13 @@ const Footer = () => {
             <h1>{t("footer")}</h1>
             <h1>{t("footer-1")}</h1>
           </div>
-          <a href="https://uis-team.com" className="float-right">{t("footer-2")}</a>
+          <a
+            target="_blank" rel="noopener noreferrer"
+            href="https://uis-team.com"
+            className="float-right"
+          >
+            {t("footer-2")}
+          </a>
         </div>
       </div>
     </div>

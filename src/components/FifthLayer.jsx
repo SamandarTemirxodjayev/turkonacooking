@@ -16,7 +16,7 @@ const FifthLayer = () => {
             <h1 className="checkbox">30 {t("fifth-layer-4")}</h1>
             <h1 className="checkbox">1 {t("fifth-layer-5")}</h1>
             <h1 className="checkbox">{t("fifth-layer-6")}</h1>
-            <a
+            <a rel="noopener noreferrer" target="_blank"
               className="flex justify-center items-center font-extrabold mt-2 tracking-wide shrink-0 p-3 hover:bg-[#f72585]  border-2 border-[#F72585] text-[#f72585] hover:text-white font-verdana not-italic text-[15px]"
               href="https://t.me/Online_mobilografiya"
             >
@@ -33,7 +33,7 @@ const FifthLayer = () => {
             <h1 className="checkbox">45 {t("fifth-layer-4")}</h1>
             <h1 className="checkbox">2 {t("fifth-layer-5")}</h1>
             <h1 className="checkbox">{t("fifth-layer-6")}</h1>
-            <a
+            <a rel="noopener noreferrer" target="_blank"
               className="flex justify-center items-center font-extrabold mt-2 tracking-wide shrink-0 p-3 hover:bg-[#f72585]  border-2 border-[#F72585] text-[#f72585] hover:text-white font-verdana not-italic text-[15px]"
               href="https://t.me/Online_mobilografiya"
             >
@@ -50,7 +50,7 @@ const FifthLayer = () => {
             <h1 className="checkbox">60 {t("fifth-layer-4")}</h1>
             <h1 className="checkbox">3 {t("fifth-layer-5")}</h1>
             <h1 className="checkbox">{t("fifth-layer-6")}</h1>
-            <a
+            <a rel="noopener noreferrer" target="_blank"
               className="flex justify-center items-center font-extrabold mt-2 tracking-wide shrink-0 p-3 hover:bg-[#f72585]  border-2 border-[#F72585] text-[#f72585] hover:text-white font-verdana not-italic text-[15px]"
               href="https://t.me/Online_mobilografiya"
             >
