@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex items-center gap-7">
             <a
               target="_blank" rel="noopener noreferrer"
-              href="https://www.instagram.com/turkona_cooking/"
+              href="https://www.instagram.com/turkona__cooking/"
             >
               <img
                 className="w-8 hover:-translate-y-2 transition-all duration-500 "
