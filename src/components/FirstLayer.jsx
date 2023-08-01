@@ -15,7 +15,7 @@ const FirstLayer = ({ scrollPosition }) => {
       <div className="gap-5 lg:flex-col flex before:h-52 before:rounded-lg lg:before:w-1 before:bg-white after:h-52 lg:py-3  after:rounded-lg lg:after:w-1 after:bg-white items-center">
         <a rel="noopener noreferrer" target="_blank"
           className="xs:w-[32px] lg:w-[32px] hover:-translate-y-2 transition-all duration-500 "
-          href="https://www.instagram.com/turkona_cooking/"
+          href="https://www.instagram.com/turkona__cooking/"
         >
           <LazyLoadImage
             src={instagram}
