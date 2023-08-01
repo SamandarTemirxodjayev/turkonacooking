@@ -27,7 +27,7 @@ const Home = ({ scrollPosition }) => {
             <h1>You Tube</h1>
           </a>
           <a
-            href="https://www.instagram.com/turkona_cooking/"
+            href="https://www.instagram.com/turkona__cooking/"
             className="flex justify-start px-5 gap-[27px] items-center rounded-[6.8px] text-white font-poppins text-[32px]  w-[300px] h-[55px] bg-grad   "
           >
             <LazyLoadImage
